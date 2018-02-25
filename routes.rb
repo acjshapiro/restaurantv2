@@ -1,5 +1,9 @@
 class Food < Sinatra::base
+
   get '/' do
-    'Hello Sinatra'
+    erb :home
   end
+
+  
+
 end

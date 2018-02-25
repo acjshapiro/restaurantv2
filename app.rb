@@ -8,3 +8,5 @@ class Food < Sinatra::Base
   set :root, File.dirname(__FILE__)
   enable :sessions
 end
+
+set :views, Proc.new {File.join(root, "views")}
