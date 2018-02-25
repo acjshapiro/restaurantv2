@@ -4,6 +4,8 @@ class Food < Sinatra::base
     erb :home
   end
 
-  
+  get "/meat/new" do
+    erb :new
+  end
 
 end
