@@ -1,26 +1,37 @@
-class Food < Sinatra::Base
+class Meat < Sinatra::Base
 
   get '/' do
     erb :home
   end
 
-  get "/meat/new" do
+  get "/new" do
     erb :new
   end
 
-  post "/apps" do
-    Meat.create(title: params[:title], description: params[:description])
-  redirect "/"
+  post "/meats" do
+    Meats.create(name: params[:name], description: params[:description])
+  redirect "/meats"
   end
 
-  get "/apps" do
-    @meats = Meat.all
+  get "/meats" do
+    @meats = Meats.all
     erb :meats
   end
 
-  get "apps/:id/edit" do
-    @meat = Meats.find(params[:id])
+  get "meats/:id/edit" do
+    @meats = Meats.find(params[:id])
     erb :edit
+  end
+
+  put "/meats/:id" do
+    meat = Meats.find(params[:id])
+    Meats.update(name: params[:name], description: params[:description])
+    redirect "/meats"
+  end
+
+  delete "/meats/:id" do
+    Meats.find(params[:id]).destroy
+    redirect "/meats"
   end
 
 end

@@ -8,12 +8,13 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/activerecord'
 require './environments'
-require '.models/app'
+require './models/app'
 
-class Food < Sinatra::Base
+class Meat < Sinatra::Base
   set :root, File.dirname(__FILE__)
   enable :sessions
   register Sinatra::ActiveRecordExtension
+  use Rack::MethodOverride
 end
 
 set :views, Proc.new {File.join(root, "views")}
