@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.menu-container{
+  border: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  order: -1;
+}
+
+.links{
+  border: 1px solid black;
+  display: flex;
+  justify-content: column;
+
+
+}
+.menu{
+  display: flex;
+  border: 1px solid black;
+  justify-content: flex-end;
+}
+.logo{
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  order: -2;
+}
+
+#logo{
+  height: 100px;
+  width: 100px;
+}
+
+h1{
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+}
+.centered {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
