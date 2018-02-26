@@ -1,13 +1,13 @@
-<h1 class="center">Edit <%= @meat.name %></h1>
-<form method="POST" action="/apps/<%= @meat.id %>">
+<h1 class="center">Edit <%= @meats.name %></h1>
+<form method="POST" action="/meats/<%= @meats.id %>">
   <input type="hidden" name="_method" value="PUT">
   <div class="input-field">
-    <input id="name" required name="name" value="<%= @meat.name %>" />
+    <input id="name" required name="name" value="<%= @meats.name %>" />
     <label class="active" for="name">Name</label>
   </div>
   <div class="input-field">
     <textarea class="materialize-textarea" id="desc" required name="description">
-      <%= @meat.description %>
+      <%= @meats.description %>
     </textarea>
     <label for="desc" class="active">Description</label>
   </div>

@@ -4,7 +4,20 @@
   box-sizing: border-box;
 }
 
-h3, h5{
+body{
+
+    background-image: url('/images/gray.jpg');
+}
+
+.shoe-text{
+  color: #8E9EAB;
+}
+h3{
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
+  color: #8E9EAB;
+}
+ h5{
   font-size: 30px;
   font-family: 'Cinzel', serif;
   color: black;
@@ -16,8 +29,12 @@ h3, h5{
 }
 h2{
   font-size: 60px;
+  text-align: center;
+  color: #8E9EAB;
 }
-
+.imgs{
+  border-radius: 2%;
+}
 .menu-container{
   border: 5px solid black;
   display: flex;
@@ -31,6 +48,7 @@ h2{
   width: 200px;
   justify-content: flex-end;
   font-family: 'Cinzel', serif;
+
 }
 
 
@@ -40,19 +58,22 @@ h2{
   justify-content: flex-end;
   justify-content: space-between;
   padding: 10px;
+  color: white;
 }
 
 
 .logo{
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   order: -2;
   width: 200px;
+  margin-left: 10px;
 }
 
 #logo{
   height: 90px;
-  width: 200px;
+  width: 150px;
 }
 .meats{
   display: flex;
@@ -61,6 +82,8 @@ h2{
 }
 h1{
   font-family: 'Cinzel', serif;
+  text-align: center;
+  color:#8E9EAB;
 }
 
 .grid-item {
@@ -68,13 +91,6 @@ h1{
   justify-content: center;
 }
 
-.centered {
-  color: blue;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .card{
   border-radius: 5%;
   height: 280px;
@@ -93,4 +109,9 @@ p{
   display:flex;
   justify-content: center;
   padding: 80px;
+}
+.slider{
+  display: flex;
+  justify-content: center;
+  height: 600 px;
 }

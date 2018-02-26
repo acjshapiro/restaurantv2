@@ -1,17 +1,17 @@
 
 <div class="meats">
-  <h1>Meats</h1>
+  <h1>Shoes</h1>
 </div>
 <div class="row">
   <% @meats.each do |meats| %>
-    <div class="col s12 m3">
-      <div class="card black">
+    <div class="col s12 m4">
+      <div class="card hoverable black">
         <div class="card-content white-text">
           <span class="card-title"><%= meats.name %></span>
           <p><%= meats.description %></p>
         </div>
         <div class="card-action">
-          <a class="btn" href="/apps/<%= meats.id %>/edit">Edit</a>
+          <a class="btn" href="/meats/<%= meats.id %>/edit">Edit</a>
           <form action="/meats/<%= meats.id %>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button class="btn red">Delete</button>

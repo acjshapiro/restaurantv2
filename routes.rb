@@ -10,7 +10,7 @@ class Meat < Sinatra::Base
 
   post "/meats" do
     Meats.create(name: params[:name], description: params[:description])
-  redirect "/meats"
+    redirect "/meats"
   end
 
   get "/meats" do
@@ -18,14 +18,14 @@ class Meat < Sinatra::Base
     erb :meats
   end
 
-  get "meats/:id/edit" do
+  get "/meats/:id/edit" do
     @meats = Meats.find(params[:id])
     erb :edit
   end
 
   put "/meats/:id" do
     meat = Meats.find(params[:id])
-    Meats.update(name: params[:name], description: params[:description])
+    meat.update(name: params[:name], description: params[:description])
     redirect "/meats"
   end
 
