@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 h3, h5{
   font-size: 30px;
   font-family: 'Cinzel', serif;
   color: black;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  padding: 80px;
 }
 
 .menu-container{
@@ -37,16 +43,19 @@ h3, h5{
   display: flex;
   justify-content: flex-start;
   order: -2;
+  width: 400px;
 }
 
 #logo{
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 200px;
 }
-
+.meats{
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
 h1{
-  text-align: center;
-  margin: 100px;
   font-family: 'Cinzel', serif;
 }
 
@@ -61,4 +70,23 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.card{
+  border-radius: 5%;
+  height: 280px;
+}
+.card-title,
+p{
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+.btn{
+  color: black;
+  font-family: 'Cinzel', serif;
+  margin: 5px;
+}
+.new{
+  display:flex;
+  justify-content: center;
+  padding: 80px;
 }
