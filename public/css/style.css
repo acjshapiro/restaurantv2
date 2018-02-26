@@ -14,17 +14,21 @@ h3, h5{
   justify-content: center;
   padding: 80px;
 }
+h2{
+  font-size: 60px;
+}
 
 .menu-container{
   border: 5px solid black;
   display: flex;
   justify-content: space-between;
   order: -1;
+  font-family: 'Cinzel', serif;
 }
 
 .links{
   display: flex;
-  width: 300px;
+  width: 200px;
   justify-content: flex-end;
   font-family: 'Cinzel', serif;
 }
@@ -43,7 +47,7 @@ h3, h5{
   display: flex;
   justify-content: flex-start;
   order: -2;
-  width: 400px;
+  width: 200px;
 }
 
 #logo{
